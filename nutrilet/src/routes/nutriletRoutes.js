@@ -6,8 +6,8 @@ const router = express.Router();
 
 router.post("/new", controller.newNutrilet)
 
-//router.get("/all", controller.findAllNutrilet)
+router.get("/all", controller.findAllNutrilet)
 
-//router.patch("/update", controller.updateByIdNutrilet)
+router.patch("/update", controller.updateByIdNutrilet)
 
-//router.delete("/delete", controller.deleteNutrilet)
+router.delete("/delete", controller.deleteNutrilet)
