@@ -14,10 +14,15 @@ const nutriletSchema = mongoose.Schema(
 
         idade: {
             type: String,
-            require: true
+            require: true,
         },
 
         peso: {
+            type: String,
+            require: true,
+        },
+
+        altura: {
             type: String,
             require: true,
         },
@@ -27,7 +32,7 @@ const nutriletSchema = mongoose.Schema(
             require: true,
         },
 
-        classificacaoImc:{
+        classificacaoImc: {
             type: String,
             require: true,
         },   

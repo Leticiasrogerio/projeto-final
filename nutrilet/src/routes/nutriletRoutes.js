@@ -8,6 +8,8 @@ router.post("/new", controller.newNutrilet)
 
 router.get("/all", controller.findAllNutrilet)
 
-router.patch("/update", controller.updateByIdNutrilet)
+router.patch("/update/:id", controller.updateByIdNutrilet)
 
-router.delete("/delete", controller.deleteNutrilet)
+router.delete("/delete/:id", controller.deleteNutrilet)
+
+module.exports = router

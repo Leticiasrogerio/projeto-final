@@ -6,17 +6,18 @@ const newNutrilet = async (req, res) => {
             nome,
             idade,
             peso,
+            altura,
             imc,
-            classificacaoimc
-        
+            classificacaoImc
         } = req.body;
 
         const cadastroNutrilet = new nutriletModel({
             nome,
             idade,
             peso,
+            altura,
             imc, 
-            classificacaoimc
+            classificacaoImc
         });
 
         const savedNutrilet = await cadastroNutrilet.save();
@@ -42,19 +43,20 @@ const updateByIdNutrilet = async (req, res) => {
         nome,
         idade,
         peso,
+        altura,
         imc,
-        classificacaoimc
+        classificacaoImc
       } = req.body;
-      const updateNutrilet = await nutriletModel.findByIdAndUpdate(
-        req.params.id,
-        {
+      const updateNutrilet = await nutriletModel.findByIdAndUpdate(req.params.id,{
           nome,
           idade,
           peso,
+          altura,
           imc,
-          classificacaoimc
+          classificacaoImc
         }
       );
+    await updateNutrilet.save()
       res.status(200).json(updateNutrilet);
     } catch {
     console.error(error);
