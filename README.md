@@ -38,16 +38,83 @@ $ npm install
 # Executar o servidor
 $ npm start
 
+```
+
 
 #### Tecnologias e pacotes utilizados
 - Node.js
 - MongoDB
 - Git
+- Javascript
 - Mongo Atlas
 - express
 - nodemon
 - dotenv-safe
 - mongoose
+- npm
+- Postman
+- swagger-autogen
+- Reder
 
 
-  
+</br>
+
+## <b> Arquitetura MVC </b>
+
+```
+ 📁 nutrilet
+   |
+   |--📁node_modules    
+   |      
+   |--📁 src
+   |  ||
+   |  ||
+   |  ||--📁 controller
+   |  |    |- 📄 nutriletController.js
+   |  |
+   |  ||--📁 database
+   |  |    |- 📄 dbConnect.js
+   |  |
+   |  ||--📁 models
+   |  |    |- 📄 nutriletModels.js
+   |  |
+   |  ||--📁 routes
+   |  |    |- 📄 nutriletRoute.js
+   |  |
+   |  ||-📄 app.js
+   |  |
+   |  |--📁 swagger
+   |  |   |- 📄 swagger_output.json
+   |  |
+   |- 📄 .env
+   |- 📄 .env.example
+   |- 📄 package-lock.json
+   |- 📄 package.json
+   |- 📑 server.js
+   |- 📄 swagger.js
+   |- 📄 .gitignore
+   |- 📄 CAPA PROJETO (1)png
+   |- 📄 README.md
+
+```
+#### Rotas
+
+|Rotas                                   |                                                    | 
+| ---------------------------------------| -------------------------------------------------- | 
+| GET ALL//nutrilet/all                  | Lista todos pacientes cadastrados na clinica       |
+| POST/nutrilet/new                      | Cadastrar novo paciente                            |
+| PATCH/nutrilet/update                  | Alterar dados do paciente                          |
+| DELETE/nutrilet/delete/                | Exclui informaçoes do paciente                     |
+
+  ## <b> Agradecimentos </b>
+</br>
+API feito pela aluna Leticia S Rogério, com o apoio de uma equipe linda e que com certeza me agregou muito conhecimento. Eu agradeço toda equipe {REPROGRAMA} pela oportunidade.
+Agradeço também a minha turma que sempre estava disposta a me ajudar e a uma colega de turma que com certeza virou uma grande amiga a Juciiii 💜
+
+
+------------
+
+
+
+
+
