@@ -17,4 +17,28 @@ Esse projeto desenvolve uma API  para controle de cadastramentos em uma clinica 
 - [x] A API deve permitir alterações nos cadastros dos pacientes;
 - [x] A API deve permitir a exclusão de cadastros dos pacientes do banco de dados.
 
+### Instalação
 
+```bash
+# Clonar o repositório
+$ git clone https:https://github.com/Leticiasrogerio/projeto-final
+
+# Entrar na pasta do repositório
+$ cd projeto-final
+
+# Instalar as dependências
+$ npm install
+
+# Executar o servidor
+$ npm start
+
+
+#### Tecnologias e pacotes utilizados
+- Node.js
+- MongoDB
+- Git
+- Mongo Atlas
+- express
+- nodemon
+- dotenv-safe
+- mongoose
